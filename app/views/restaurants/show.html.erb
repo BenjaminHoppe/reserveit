@@ -36,14 +36,12 @@
 
     <%if @user && @user.id != @restaurant.user_id%>
 
-
       <%= link_to new_restaurant_reservation_path(@restaurant.id) do %>
         <span class="link_button add_button reservation_button">
           <%=image_tag('covered-food-tray-on-a-hand-of-hotel-room-service', class: "svg") %>
           Make a Reservation
         </span>
       <% end %>
-
 
     <%elsif !@user%>
       Please <%=link_to "log in", new_session_path %> or <%= link_to "sign up", new_user_path %> to make a reservation.
