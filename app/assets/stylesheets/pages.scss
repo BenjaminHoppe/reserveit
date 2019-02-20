@@ -15,7 +15,8 @@
  */
 
 $wine : #722F37;
-$details: rgb(63, 100, 157);
+$details: rgba(63, 100, 157, 0);
+$blue: rgb(63, 100, 157);
 $delete: rgb(164, 4, 4);
 $add: rgb(55, 116, 57);
 $charcoal: #1B1C1C;
@@ -165,11 +166,34 @@ h2 {
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 60px 60px;
   padding: 15px 30px 30px 15px;
+  overflow: hidden;
 }
 
 .restaurant_short > .about {
   grid-column-start: 2;
   grid-row: 1/4;
+}
+
+.user_favourite {
+  position: absolute;
+  background-color: rgb(189, 29, 29);
+  color: white;
+  width: 300px;
+  height: 40px;
+  padding-top: 20px;
+  text-align: center;
+  transform: rotate(45deg);
+  right: -100px;
+  top: 20px;
+  box-shadow: -2px 2px 10px 1px rgba(0, 0, 0, 0.5)
+}
+
+.your_restaurant {
+  background-color: goldenrod;
+  display: inline-block;
+  padding: 10px 15px 7px 15px;
+  border-radius: 10px;
+  margin-left: 20px;
 }
 
 .restaurant_details {
@@ -182,6 +206,15 @@ h2 {
 
 }
 
+.edit_restaurant_button {
+  background-color: transparent;
+  color: #5577bb;
+  padding-left: 20px;
+}
+
+.edit_restaurant_button>img {
+  width: 15px
+}
 .restaurant_about {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -252,20 +285,55 @@ h2 {
 
 .details_button {
   background-color: $details;
-  color: white;
+  color: #adadad;
 }
 
 .add_button {
   background-color: $add;
 }
 
+.edit_menu_button {
+  background-color: $blue;
+}
+
+.reserve_button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
 .reservation_button {
   grid-row-start: 5;
   grid-column-start: -2;
+  border-radius: 5px;
+  padding: 7px 20px;
+}
+
+.reservation_button>img {
+  width: 1.5em;
+  vertical-align: middle;
+  padding-right: 5px;
 }
 
 .delete_button {
   background-color: $delete;
+}
+
+.delete_menu_button {
+  background-color: $delete;
+  font-size: 0.5em;
+  color: white;
+  padding: 5px 5px;
+  border-radius: 2px;
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.2s;
+
+}
+
+.delete_menu_button>img {
+  vertical-align: middle;
+  height: 1.2em;
 }
 
 .edit_button {
@@ -378,13 +446,14 @@ h3 {
 /* All Cards Start */
 .card {
   background: #F8F8FF;
-    border-radius: 2px;
-    padding: 20px;
-    margin: 50px auto;
-    width: 50vw;
-    color: black;
-    box-shadow: 2px 2px 10px black;
-    position: relative;
+  border-radius: 2px;
+  padding: 20px;
+  margin: 50px auto;
+  width: 50vw;
+  color: black;
+  box-shadow: 2px 2px 10px black;
+  position: relative;
+  overflow: hidden;
 }
 
 .login_card, .menu_item_card {
@@ -457,13 +526,13 @@ h3 {
 
 .menu_item {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 .menu_item_details {
   grid-column-start: 1;
   grid-column-end: 2;
-  padding: 15px;
+  padding: 5px 15px;
 }
 
 .menu_item_delete {

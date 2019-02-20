@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_17_150908) do
+ActiveRecord::Schema.define(version: 2019_02_20_202410) do
 
   create_table "menu_items", force: :cascade do |t|
     t.integer "restaurant_id"
@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(version: 2018_12_17_150908) do
     t.integer "sat_open_until"
     t.integer "sun_open_from"
     t.integer "sun_open_until"
+    t.boolean "user_favourite"
   end
 
   create_table "users", force: :cascade do |t|

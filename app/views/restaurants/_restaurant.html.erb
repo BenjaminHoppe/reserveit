@@ -1,9 +1,9 @@
 <div class="card_header"><h2><%= restaurant.name %></h2>
     <% if @user && @restaurant.user_id == @user.id %>
           <%= link_to edit_restaurant_path(@restaurant.id) do %>
-        <span class="link_button edit_button">
-            <%=image_tag('writing', class: "svg") %>
-            Edit
+        <span class=" edit_restaurant_button">
+            <%=image_tag('writing-blue', class: "svg") %>
+            Edit Restaurant
         </span>
     <% end %>
     <%end%>

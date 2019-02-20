@@ -11,21 +11,12 @@
             Details
           </span>
         <%end%>
+    <%if restaurant.user_favourite%><div class="user_favourite">User Favourite</div><%end%>
 
 
-    <%if current_user && current_user.id != restaurant.user_id%>
 
-        <%= link_to new_restaurant_reservation_path(restaurant.id) do %>
-            <span class="link_button add_button reservation_button">
-                <%=image_tag('covered-food-tray-on-a-hand-of-hotel-room-service', class: "svg") %>
-                Make a reservation
-            </span>
-        <% end %>
-
-    <%elsif current_user && current_user.id == restaurant.user_id%>
-        ( Your Restaurant )
-    <%elsif !current_user%>
-      Please <%=link_to "log in", new_session_path %> or <%= link_to "sign up", new_user_path %> to make a reservation.
+    <%if current_user && current_user.id == restaurant.user_id%>
+        <div class="your_restaurant">Your Restaurant</div>
     <%end%>
 </div>
 <div class="restaurant_short">
@@ -48,5 +39,30 @@
             <%end%>
         <%end%>
     </p>
+    <%if current_user && current_user.id != restaurant.user_id%>
+        <div class="reserve_button">
+            <%= link_to new_restaurant_reservation_path(restaurant.id) do %>
+                <span class="link_button add_button reservation_button">
+                    <%=image_tag('covered-food-tray-on-a-hand-of-hotel-room-service', class: "svg") %>
+                    ReserveIt!
+                </span>
+            <% end %>
+        </div>
 
+    <%elsif current_user && current_user.id == restaurant.user_id%>
+        <div class="reserve_button">
+
+        <%= link_to edit_restaurant_path(restaurant.id) do %>
+            <span class=" edit_restaurant_button">
+                <%=image_tag('writing-blue', class: "svg") %>
+                Edit Restaurant
+            </span>
+            </div>
+        <%end%>
+
+    <%elsif !current_user%>
+        <div class="reserve_button">
+            <%=link_to "Log in", new_session_path %> or <%= link_to "Sign up", new_user_path %> to reserve
+        </div>
+    <% end %>
 </div>

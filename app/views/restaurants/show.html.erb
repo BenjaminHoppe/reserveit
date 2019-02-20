@@ -16,9 +16,9 @@
       </ul>
     </div>
         <%= link_to new_restaurant_menu_item_path(@restaurant.id) do %>
-          <span class="link_button add_button">
-            <%=image_tag('plus-black-symbol', class: "svg") %>
-            New Menu Item
+          <span class="link_button edit_menu_button">
+            <%=image_tag('writing', class: "svg") %>
+            Edit Menu
           </span>
         <% end %>
     <%end%>
