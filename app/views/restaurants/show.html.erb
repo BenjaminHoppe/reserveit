@@ -6,7 +6,7 @@
     <%= render 'restaurant', restaurant: @restaurant %>
     <%if @user && @restaurant.user_id == @user.id && @menu_items.length > 0 %>
       <div class="menu">
-      ~ Menu ~
+              <p><span class="label">~ Menu ~</span></p>
       <ul>
         <% @menu_items.each do |item| %>
           <li>

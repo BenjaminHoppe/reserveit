@@ -38,11 +38,11 @@
         <%= restaurant.neighbourhood %>
     </p>
     <p> <span class="label">Price range:</span><br>
+        <% dollar_signs = restaurant.price_range %>
         <% 4.times do |something| %>
-            <% dollar_digns = restaurant.price_range %>
-            <% if dollar_digns > 0 %>
+            <% if dollar_signs > 0 %>
                 <img src="/assets/coin-of-dollar.svg" class="price-svg">
-                <% dollar_digns -= 1 %>
+                <% dollar_signs -= 1 %>
             <%else%>
                 <img src="/assets/coin-of-dollar-grey.svg" class="price-svg">
             <%end%>

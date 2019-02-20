@@ -78,7 +78,6 @@ header {
 
  .logo_svg {
     height: 30px;
-    width: 30px;
     display: inline-block;
   }
 
@@ -196,7 +195,6 @@ h2 {
   grid-row-start: 3;
   grid-row-end: 5;
   border-right: 1px solid lightgrey;
-
 }
 
 .restaurant_open {
@@ -208,7 +206,6 @@ h2 {
   grid-column-start: 2;
   grid-column-end: 4;
   border-bottom: 1px solid lightgrey;
-
 }
 
 .card_header {
@@ -275,10 +272,7 @@ h2 {
   background-color: $details;
 }
 
-
-
 /* Restaurant Index End */
-
 
 /* Form Start */
 .new_restaurant_form {
@@ -288,7 +282,6 @@ h2 {
   padding: 15px 30px 30px 15px;
   color: $wine;
   border-bottom: 1px solid lightgrey;
-
 }
 
 .restaurant_summary{
@@ -338,6 +331,7 @@ h3 {
   vertical-align: middle;
   padding: 50px 0px;
 }
+
 .open_until {
   grid-column-start: 3;
   grid-column-end: 4;
@@ -349,6 +343,7 @@ h3 {
   margin: 10px 0px;
   padding-bottom: 5px;
 }
+
 .open_until > label, input {
   margin: 10px 0px;
   padding-bottom: 5px;
@@ -407,11 +402,13 @@ h3 {
     padding: 10px;
     background-color: goldenrod;
     color: white;
-    border-radius: 2px;
-    width: 80px;
-    height: 30px;
-}
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+
 .loyalty_points_contents {
+  transform: translateY(15px) translateX(0px);
   position: relative;
 }
 
@@ -429,8 +426,20 @@ h3 {
   font-size: 1.25em;
 }
 
+.points-star {
+  transform: translateY(5px),
+}
+
 .notice {
+  position: absolute; 
+  right: 10px;
+  margin: 10px auto;
+  padding: 15px 20px;
   text-align: center;
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 2px 2px 10px black;
+
 }
 
 .price-svg {
@@ -460,20 +469,16 @@ h3 {
 .menu_item_delete {
   grid-column-start: 2;
   grid-column-end: 3;
-
 }
 
 #error_explanation {
   color: red;
 }
 
-
 .user_icon {
   width: 15px;
   margin: 0px 5px;
 }
-
-
 
 // footer {
 //     background-color: $charcoal;

@@ -10,8 +10,6 @@ class Reservation < ApplicationRecord
     end
   end 
 
-
-
   validate :reservation_time_cant_be_outside_open_hours
   def reservation_time_cant_be_outside_open_hours
     if date.wday == 0
