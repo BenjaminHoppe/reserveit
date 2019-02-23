@@ -32,10 +32,10 @@
         <% dollar_signs = restaurant.price_range %>
         <% 4.times do |something| %>
             <% if dollar_signs > 0 %>
-                <img src="/assets/coin-of-dollar.svg" class="price-svg">
+                <%=image_tag("coin-of-dollar.svg", class:"price-svg")%>
                 <% dollar_signs -= 1 %>
             <%else%>
-                <img src="/assets/coin-of-dollar-grey.svg" class="price-svg">
+                <%=image_tag("coin-of-dollar-grey.svg", class:"price-svg")%>
             <%end%>
         <%end%>
     </p>
