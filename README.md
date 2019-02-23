@@ -29,7 +29,7 @@ Reserve-It allows guests to browse restaurants and make reservations, and for ow
   <img src="" />
 </p>
 
-:curry: Guests: Make reservations and view them in your profile.
+:hamburger: Guests: Make reservations and view them in your profile.
 
 ## Motivation
 
