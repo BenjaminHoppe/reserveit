@@ -3,7 +3,7 @@
 > Restaurant reservation app.
 
 <p align="center">
-  <img src="./assets/horizonreserve-it-logo.svg" width="100%">
+  <img src="./assets/reserve-it-logo.svg" width="100%">
 </p>
 
 ReserveIt allows guests to browse restaurants and make reservations, and for owners to list their restaurants and manage guest reservations.
