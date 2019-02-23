@@ -58,7 +58,7 @@ rails server
 
 ## Tech Stack
 
-This app was built in [Ruby](https://www.ruby-lang.org/en/) with [Ruby on Rails](https://rubyonrails.org/).
+Reserve-it was built in [Ruby](https://www.ruby-lang.org/en/) with [Ruby on Rails](https://rubyonrails.org/).
 
 ## Developer team
 
