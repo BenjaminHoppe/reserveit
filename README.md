@@ -3,7 +3,7 @@
 > Restaurant reservation app.
 
 <p align="center">
-  <img src="./app/assets/images/reserve-it-logo.svg" width="100%" style="width: 400px;">
+  <img src="./app/assets/images/reserve-it-logo.svg" alt="reserve-it logo" width="400px">
 </p>
 
 ReserveIt allows guests to browse restaurants and make reservations, and for owners to list their restaurants and manage guest reservations.
