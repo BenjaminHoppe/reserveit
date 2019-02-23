@@ -7,7 +7,7 @@
 
         <%= link_to restaurant_path(restaurant.id) do %>
           <span class="link_button details_button">
-            <%=image_tag('magnifier', class: "svg") %>
+            <%=image_tag('magnifier.svg', class: "svg") %>
             Details
           </span>
         <%end%>
@@ -43,7 +43,7 @@
         <div class="reserve_button">
             <%= link_to new_restaurant_reservation_path(restaurant.id) do %>
                 <span class="link_button add_button reservation_button">
-                    <%=image_tag('covered-food-tray-on-a-hand-of-hotel-room-service', class: "svg") %>
+                    <%=image_tag('covered-food-tray-on-a-hand-of-hotel-room-service.svg', class: "svg") %>
                     ReserveIt!
                 </span>
             <% end %>
@@ -54,7 +54,7 @@
 
         <%= link_to edit_restaurant_path(restaurant.id) do %>
             <span class=" edit_restaurant_button">
-                <%=image_tag('writing-blue', class: "svg") %>
+                <%=image_tag('writing-blue.svg', class: "svg") %>
                 Edit Restaurant
             </span>
             </div>

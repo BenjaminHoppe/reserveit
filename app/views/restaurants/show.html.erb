@@ -17,7 +17,7 @@
     </div>
         <%= link_to new_restaurant_menu_item_path(@restaurant.id) do %>
           <span class="link_button edit_menu_button">
-            <%=image_tag('writing', class: "svg") %>
+            <%=image_tag('writing.svg', class: "svg") %>
             Edit Menu
           </span>
         <% end %>
@@ -28,7 +28,7 @@
 
         <%= link_to new_restaurant_menu_item_path(@restaurant.id) do %>
           <span class="link_button add_button">
-            <%=image_tag('plus-black-symbol', class: "svg") %>
+            <%=image_tag('plus-black-symbol.svg', class: "svg") %>
             New Menu Item
           </span>
         <% end %>
@@ -38,7 +38,7 @@
 
       <%= link_to new_restaurant_reservation_path(@restaurant.id) do %>
         <span class="link_button add_button reservation_button">
-          <%=image_tag('covered-food-tray-on-a-hand-of-hotel-room-service', class: "svg") %>
+          <%=image_tag('covered-food-tray-on-a-hand-of-hotel-room-service.svg', class: "svg") %>
           Make a Reservation
         </span>
       <% end %>

@@ -27,21 +27,21 @@
         Hello, <%=current_user.name%> |
         <div class="branding">
           <%= link_to users_path do %>
-            <%=image_tag('user', class: "user_icon") %>
+            <%=image_tag('user.svg', class: "user_icon") %>
             Profile
           <% end %> 
         </div> | 
         <div class="branding">
           <%= link_to sessions_path('0'), :method => :delete do %>
-            <%=image_tag('logout', class: "user_icon") %>
+            <%=image_tag('logout.svg', class: "user_icon") %>
             Log out
           <% end %>
       <%else%>
           <%= link_to new_sessions_path do %>
-            <%=image_tag('user', class: "user_icon") %>
+            <%=image_tag('user.svg', class: "user_icon") %>
             Log in
           <% end %> 
-        <%=image_tag('new-user', class: "user_icon") %>
+        <%=image_tag('new-user.svg', class: "user_icon") %>
         <%= link_to "Sign up", new_user_path%>
       <%end%>
     </nav>

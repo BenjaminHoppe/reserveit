@@ -10,14 +10,14 @@
     </p>
     <div class="users_loyalty_points">
         <div class="loyalty_points_contents">
-            <%=image_tag("star-white", :class =>"svg points-star")%>
+            <%=image_tag("star-white.svg", :class =>"svg points-star")%>
             <span class="loyalty_points_count"><%= @user.loyalty_points %></span>
         </div>
     </div>
 
     <%= link_to edit_user_path(@user.id) do %>
         <span class="link_button edit_button">
-            <%=image_tag('writing', class: "svg") %>
+            <%=image_tag('writing.svg', class: "svg") %>
             Edit
         </span>
     <% end %>
@@ -53,7 +53,7 @@
         </ul>
         <%= link_to new_restaurant_path do %>
           <span class="link_button add_button">
-            <%=image_tag('plus-black-symbol', class: "svg") %>
+            <%=image_tag('plus-black-symbol.svg', class: "svg") %>
             Add Restaurant
           </span>
         <%end%>
@@ -61,7 +61,7 @@
         Do you own a restaurant?  Add it here:
         <%= link_to new_restaurant_path do %>
           <span class="link_button add_button">
-            <%=image_tag('plus-black-symbol', class: "svg") %>
+            <%=image_tag('plus-black-symbol.svg', class: "svg") %>
             Add Restaurant
           </span>
         <%end%>

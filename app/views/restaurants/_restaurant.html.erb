@@ -2,7 +2,7 @@
     <% if @user && @restaurant.user_id == @user.id %>
           <%= link_to edit_restaurant_path(@restaurant.id) do %>
         <span class=" edit_restaurant_button">
-            <%=image_tag('writing-blue', class: "svg") %>
+            <%=image_tag('writing-blue.svg', class: "svg") %>
             Edit Restaurant
         </span>
     <% end %>
