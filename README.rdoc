@@ -1,28 +1,66 @@
-== README
+# Reserve-It
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Restaurant reservation app.
 
-Things you may want to cover:
+<p align="center">
+  <img src="./assets/horizonreserve-it-logo.svg" width="100%">
+</p>
 
-* Ruby version
+ReserveIt allows guests to browse restaurants and make reservations, and for owners to list their restaurants and manage guest reservations.
 
-* System dependencies
+## Table of contents
 
-* Configuration
+- [Screenshots](#screenshots)
+- [Motivation](#motivation)
+- [Getting started](#getting-started)
+- [Usage](#usage)
+- [Tech Stack](#tech-stack)
+- [Developer team](#developer-team)
 
-* Database creation
+## Screenshots
 
-* Database initialization
+<p align="center">
+  <img src="" />
+</p>
 
-* How to run the test suite
+Browse restaurants, see restaurant info at a glance, and click on the restaurant for more details :bento:
 
-* Services (job queues, cache servers, search engines, etc.)
+<p align="center">
+  <img src="" />
+</p>
 
-* Deployment instructions
+Guests: Make reservations and view them in your profile :curry:
 
-* ...
+## Motivation
 
+We wanted to build an app to make it easy for restaurant guests and owners to make reservations at restaurants and to keep track of their reservations.
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## Take a Tour :ramen:
+
+### [Live app](https://project-reserve-it.herokuapp.com/)
+
+### Run the app locally
+1. Clone this repository
+2. In the repository's directory, install gems:
+```bash
+bundle install
+```
+3. In the repository's directory, run migrations and seeds:
+```bash
+rails db:migrate
+rails db:seed
+```
+4. In the repository's directory, start the server:
+```bash
+rails server
+```
+5. In a browser, enter the local host URL with the corresponding port (eg. "http://localhost:3000")
+
+## Tech Stack
+
+This app was built in [Ruby](https://www.ruby-lang.org/en/) with [Ruby on Rails](https://rubyonrails.org/).
+
+## Developer team
+
+- Malcolm MacLure - [GitHub](https://github.com/maclure) - [LinkedIn](https://www.linkedin.com/in/malcolm-maclure/)
+- Benjamin Hoppe - [GitHub](https://github.com/) - [LinkedIn](https://www.linkedin.com/in//)
