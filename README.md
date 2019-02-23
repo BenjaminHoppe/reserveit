@@ -20,13 +20,13 @@ Reserve-It allows guests to browse restaurants and make reservations, and for ow
 ## Screenshots
 
 <p align="center">
-  <img src="./app/assets/images/reserve-it-screencap1.png" />
+  <img src="./app/assets/images/reserve-it-screencap1.png" width="200px"/>
 </p>
 
 :bento: Browse restaurants, see restaurant info at a glance, and click on the restaurant for more details.
 
 <p align="center">
-  <img src="./app/assets/images/reserve-it-screencap2.png" />
+  <img src="./app/assets/images/reserve-it-screencap2.png" width="200px"/>
 </p>
 
 :hamburger: Guests: Make reservations and view them in your profile.
