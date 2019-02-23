@@ -6,7 +6,7 @@
   <img src="./app/assets/images/reserve-it-logo.svg" alt="reserve-it logo" width="400px">
 </p>
 
-ReserveIt allows guests to browse restaurants and make reservations, and for owners to list their restaurants and manage guest reservations.
+Reserve-It allows guests to browse restaurants and make reservations, and for owners to list their restaurants and manage guest reservations.
 
 ## Table of contents
 
@@ -23,13 +23,13 @@ ReserveIt allows guests to browse restaurants and make reservations, and for own
   <img src="" />
 </p>
 
-Browse restaurants, see restaurant info at a glance, and click on the restaurant for more details :bento:
+:bento: Browse restaurants, see restaurant info at a glance, and click on the restaurant for more details.
 
 <p align="center">
   <img src="" />
 </p>
 
-Guests: Make reservations and view them in your profile :curry:
+:curry: Guests: Make reservations and view them in your profile.
 
 ## Motivation
 
