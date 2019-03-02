@@ -62,5 +62,5 @@ Reserve-it was built in [Ruby](https://www.ruby-lang.org/en/) with [Ruby on Rail
 
 ## Developer team
 
-- Malcolm MacLure - [GitHub](https://github.com/maclure) - [LinkedIn](https://www.linkedin.com/in/malcolm-maclure/)
-- Benjamin Hoppe - [GitHub](https://github.com/) - [LinkedIn](https://www.linkedin.com/in//)
+- Malcolm MacLure - [Website](http://malcolmmaclure.com/) - [GitHub](https://github.com/MacLure) - [LinkedIn](https://www.linkedin.com/in/malcolmmaclure/)
+- Benjamin Hoppe - [Website](https://benjaminhoppe.co/) - [GitHub](https://github.com/BenjaminHoppe) - [LinkedIn](https://www.linkedin.com/in/mrbenjaminhoppe/)
