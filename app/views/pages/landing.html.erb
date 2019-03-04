@@ -10,12 +10,12 @@
 </head>
 <body>
 <div class="hero">
-<h1>Browse restaurants. Reserve a table.</h1>
-    <%= render 'sessions/new_session_form' %>
-
-
-
-
+  <%= image_tag("hero_1.jpg", class: "landing-image") %>
+  <div class="heroImageOverlay">
+    <div class="landingLoginContainer">
+      <%= render 'sessions/new_session_form' %>
+    </div>
+  </div>
 </div>
 </body>
 </html>

@@ -120,14 +120,27 @@ li {
 /* Landing Page Start */
 
 .hero {
+    position: absolute;
+    margin: 0 auto;
+    padding: 0;
+
+    width: 100vw;
     height: 100vh;
-    background-image: url("hero_1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+}
+
+.landing-image {
+  position: absolute;
+}
+
+.heroImageOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3)
+}
+
+.landingLoginContainer {
+  margin: 150px auto;
 }
 
 /* Landing Page End */
