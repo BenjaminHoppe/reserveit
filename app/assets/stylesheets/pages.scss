@@ -143,6 +143,20 @@ li {
   margin: 150px auto;
 }
 
+.browse {
+  margin-top: 10px;
+}
+
+a {
+  color: $wine;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: red;
+}
+
 /* Landing Page End */
 
 
