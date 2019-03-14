@@ -5,10 +5,10 @@
   <%=image_tag('covered-food-tray-on-a-hand-of-hotel-room-service.svg', class:"logo_2")%>
   <h2 class="title">Restaurants</h2>
 </div>
-<ul>
+<ul class="restaurantCards">
   <% @restaurants.each do |restaurant| %>
     <li>
-      <div class="card restaurant_card">
+      <div class="restaurant_card">
         <%= render 'restaurant_short', restaurant: restaurant %>
       </div>
     </li>

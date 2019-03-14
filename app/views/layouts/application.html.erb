@@ -25,7 +25,7 @@
     <nav class="nav">
 
       <% if current_user %>
-        Hello, <%=current_user.name%> |
+        <span class="greeting">Hello, <%=current_user.name%> |</span>
         <div class="branding">
           <%= link_to users_path do %>
             <%=image_tag('user.svg', class: "user_icon") %>

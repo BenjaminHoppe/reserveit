@@ -114,6 +114,21 @@ li {
     list-style: none;
 }
 
+@media only screen and (max-width: 650px) {
+  .greeting {
+    display: none;
+  }
+
+  .your_restaurant {
+    background-color: goldenrod;
+    display: block;
+    padding: 10px 15px 7px 15px;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+
+}
+
 /* Layout End */
 
 
@@ -126,6 +141,18 @@ li {
 
     width: 100vw;
     height: 100vh;
+}
+
+
+.hero>img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1130px) {
+  .hero>img {
+    width: auto;
+    height: 100%;
+  }
 }
 
 .landing-image {
@@ -186,6 +213,13 @@ h2 {
 .label {
   color: $wine;
   font-weight: 1000;
+}
+
+.restaurantCards {
+  margin: 0 auto;
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .restaurant_short {
@@ -281,7 +315,16 @@ h2 {
 }
 
 .restaurant_card {
-  width: 80vw;
+    background: #F8F8FF;
+    border-radius: 2px;
+    padding: 20px;
+    margin: 40px 40px;
+    width: 500px;
+    max-height: 300px;
+    color: black;
+    box-shadow: 2px 2px 10px black;
+    position: relative;
+    overflow: hidden;
 }
 
 // Link Buttons //
